@@ -1,0 +1,569 @@
+@import "/css/mobile.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+  line-height: 1.6rem;
+  font-family: "lato";
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+header {
+  font-family: "Lily Script One";
+  display: flex;
+  color: #ea791c;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: transparent;
+  position: fixed;
+  min-width: 100vw;
+  z-index: 1;
+}
+.contenedor-logo {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.contenedor-logo #logo {
+  font-family: "Lily Script One";
+  color: #ea791c;
+  margin: 0;
+  padding-top: 6px;
+}
+.contenedor-logo .fa-martini-glass-citrus {
+  color: #ea791c;
+  margin-left: 7px;
+}
+header #nav {
+  display: flex;
+}
+
+#nav .contenedor-comidas {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 0;
+  cursor: pointer;
+}
+.contenedor-comidas .explora {
+  margin: 0;
+  padding: 0;
+}
+.contenedor-comidas .fa-chevron-left {
+  margin-left: 10px;
+}
+.contenedor-comidas .fa-bars {
+  display: none;
+}
+.contenedor-comidas:hover .fa-chevron-left {
+  transform: rotate(-90deg);
+}
+#nav .categorias {
+  display: none;
+}
+#nav:hover .categorias {
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  background-color: #282a2d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0px;
+  border-radius: 5px;
+}
+.categorias .fa-xmark {
+  display: none;
+}
+.categorias .listas-comidas {
+  list-style: none;
+  margin: 15px 0px 15px 0;
+  padding: 0 20px 0px 0;
+  border-left: #ea791c solid 2px;
+  font-size: 1.2rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+.categorias .listas-comidas:hover {
+  background-color: #545557;
+}
+.listas-comidas .enlace-comidas {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.enlace-comidas .img-comidas {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+.listas-comidas .small-pro {
+  color: #f2f2f2;
+  padding: 5px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+/* main #carrusel {
+  margin: auto;
+  border: #ea791c solid 10px;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  background-size: contain;
+
+}
+#carrusel p {
+  color: #ea791c;
+}
+#carrusel .cont-figure {
+  border: black solid 5px;
+  position: relative;
+  height: 100%;
+}
+.cont-figure .imagen {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+.imagen img {
+  width: 100%;
+  height: 100%;
+}
+.cont-figure .imagen-1 {
+  background-color: #66f00d;
+}
+.cont-figure .imagen-2 {
+  background-color: #ea791c;
+}
+.cont-figure .imagen-3 {
+  background-color: aqua;
+}
+.cont-figure .imagen-4 {
+  background-color: black;
+}
+.cont-figure .imagen-5 {
+  background-color: red;
+}
+.cont-figure .flechas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a .fa-solid {
+  font-size: 50px;
+  color: white;
+} */
+
+main #carrusel-1 {
+  animation: ani 20s 10s ease infinite;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/images/carne.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  min-width: 100vw;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+#carrusel-1 .contenedor-bienvenida {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 60px 10px 10px 10px;
+}
+
+#carrusel-1 .contenedor-bienvenida .h1-bi {
+  font-size: 50px;
+  margin: 0;
+  line-height: 4rem;
+  border-right: 1px solid #545557;
+  padding-right: 50px;
+}
+#carrusel-1 .contenedor-bienvenida .h1-bi .strong-bi {
+  color: #ea791c;
+  padding: 0;
+  margin: 0;
+}
+#carrusel-1 .contenedor-bienvenida .small-bi {
+  font-size: x-large;
+  padding-left: 50px;
+}
+#carrusel-1 .contenedor-bienvenida .small-bi .em-bi {
+  color: #ea791c;
+}
+#carrusel-1 .contenedor-platos {
+  display: flex;
+  position: absolute;
+  bottom: 35px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 30px 10px 10px 10px;
+}
+.contenedor-platos a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+  color: inherit;
+}
+.contenedor-platos .imagen-cont-platos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.imagen-cont-platos .imagen-platos {
+  width: 80px;
+  clip-path: circle();
+  margin: 0;
+  padding: 0;
+}
+.imagen-cont-platos .small-platos {
+  font-size: large;
+  margin: 5px;
+}
+
+@keyframes ani {
+  20% {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/images/pizza.jpg);
+  }
+  40% {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/images/postre.jpg);
+  }
+  60% {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/images/salsa.jpg);
+  }
+  80% {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/images/sopa.jpg);
+  }
+  100% {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/images/carne.jpg);
+  }
+}
+/* desayuno-------------------------------------------------------------- */
+main #desayuno {
+  color: #282a2d;
+  display: flex;
+  min-width: 100vw;
+  min-height: 400px;
+  align-items: center;
+  margin-top: 150px;
+  background-color: #f2f2f2;
+  flex-direction: column;
+}
+h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px;
+}
+h2 img {
+  width: 30px;
+}
+.cont-t {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-t .t {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 0;
+  width: 400px;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cont-t .t:hover {
+  transform: translateZ(-20px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate3d(20px, 10px, 5px);
+}
+
+.cont-t .t-de-1 {
+  background-image: url("https://lomaculinaria.com/wp-content/uploads/2022/09/Pan-France%CC%81s-con-Cubierta-de-Corn-Flakes-Loma-Culinaria-1200x800-1.jpg");
+}
+.cont-t .t-de-2 {
+  background-image: url("https://lh4.googleusercontent.com/proxy/GoiYTqMpI0_ACQ88d5LIlrCiJTAYaRVCSWWYQFjxU4BrENsQLpg6S_sk0xTfyo8DouK1r5m0czPixBrLGfLFN6Shvh_hzrrmBrurdWJjw4AAjwXmpJIbFCVe5CKwxDFnYb-JgATD_g");
+}
+.cont-t .t-de-3 {
+  background-image: url("https://d1uz88p17r663j.cloudfront.net/original/b33b9cb49bced4a1fd943be3b6962f1f_ATOLE_DE_CHOCOLATE_CON_NUEZ_150.jpg");
+}
+
+.t h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  height: 50px;
+}
+.t:hover h3 {
+  transition: 0.3s;
+  color: #ea791c;
+  font-weight: 900;
+  height: 100px;
+}
+h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+.t small {
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: medium;
+}
+/* desayuno-------------------------------------------------------------- */
+
+/* almuerzo-------------------------------------------------------------- */
+main #almuerzo {
+  color: #282a2d;
+  display: flex;
+  min-width: 100vw;
+  min-height: 400px;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://cdn.pixabay.com/photo/2021/02/24/15/21/cook-6046729_1280.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#almuerzo .h2-almuerzo {
+  color: #f2f2f2;
+}
+.h2-almuerzo .fa-rocket {
+  color: #ea791c;
+}
+.cont-t .t-al-1 {
+  background-image: url("https://cdn0.recetasgratis.net/es/posts/2/9/2/fetuccini_a_la_huancaina_77292_600.webp");
+}
+.cont-t .t-al-2 {
+  background-image: url("https://cdn0.recetasgratis.net/es/posts/1/9/2/bistec_apanado_77291_600.webp");
+}
+.cont-dos .t-al-3 {
+  margin: 0;
+  background-image: url("https://www.rosalat.com.ar/wp-content/uploads/2023/03/empanadas-jamon-y-queso.jpg");
+}
+.cont-dos .t-al-4 {
+  margin: 10px 0 0 0;
+  background-image: url("https://assets.elgourmet.com/wp-content/uploads/2023/09/shutterstock_2147478573-1-1024x683.jpg.webp");
+}
+.cont-t .cont-dos {
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* almuerzo-------------------------------------------------------------- */
+
+/* cena-------------------------------------------------------------- */
+main #cena {
+  color: #282a2d;
+  display: flex;
+  min-width: 100vw;
+  min-height: 400px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.h2-cena .fa-star {
+  color: #ea791c;
+}
+.cont-t .t-cena-1 {
+  height: 80vh;
+  flex-grow: 2;
+  flex-basis: 500px;
+  background-image: url("https://assets.bonappetit.com/photos/61ef1234ac372decaca43859/16:9/w_2560%2Cc_limit/20220118%2520Malafatti%2520LEDE.jpg");
+}
+.cont-t .t-cena-2 {
+  background-image: url("https://i.blogs.es/b3a96f/patatas_fundentes/1366_2000.jpg");
+  flex-grow: 2;
+  flex-basis: 500px;
+  height: 300px;
+}
+.cont-t .t-cena-3 {
+  height: 300px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  background-image: url("https://resizer.glanacion.com/resizer/v2/la-pizza-de-peperoni-estilo-nueva-OSJYHXRML5DUTEMJRYUCZTIALI.jpg?auth=d9055e78e29b9c01d9a68e317f946c6500983d85e9378ddf56e1a0a0d3e63f72&width=768&height=512&quality=70&smart=true");
+}
+.cont-t .t-cena-4 {
+  height: 300px;
+
+  flex-grow: 1;
+  flex-basis: 250px;
+  background-image: url("https://content-cocina.lecturas.com/medio/2023/06/23/ensalada_coleslaw_y_ensalada_waldorf_a7762efc_1200x1200.jpg");
+}
+.cont-t .cont-tres {
+  flex-basis: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: center;
+}
+/* cena-------------------------------------------------------------- */
+
+/* footer--------------------------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100px;
+  color: #282a2d;
+  background-color: #fefefe;
+  padding: 20px;
+}
+footer .sec-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 100px;
+}
+footer .info-res {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+}
+/* footer--------------------------------------------- */
+
+main .postres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0 0 0;
+  gap: 100px;
+  background-color: #fefefe;
+}
+.postres .imagen-postres {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 500px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("https://cdn.pixabay.com/photo/2016/11/29/09/00/doughnuts-1868573_1280.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 0;
+  transition: grid-template-rows 400ms;
+  overflow: hidden;
+}
+.postres .imagen-postres:hover {
+  grid-template-rows: 1fr 20rem;
+}
+.imagen-postres h2 {
+  margin: 0;
+  padding: 0;
+  top: 80px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagen-postres figcaption {
+  background-color: #ea791c;
+  /* border-top-right-radius: 100%;
+  border-top-left-radius: 100%; */
+  font-size: x-large;
+  padding-top: 80px;
+  font-weight: 700;
+}
+.postres .cont-t {
+  background-color: #ea791c;
+  width: 100%;
+  color: #282a2d;
+}
+.cont-t .t-postres-1 {
+  background-image: url("https://www.cocina-uruguaya.com/base/stock/Recipe/226-image/226-image_web.jpg.webp");
+}
+.cont-t .t-postres-2 {
+  background-image: url("https://www.lanacion.com.py/resizer/snxNzGpNCWIDckkehtm_y_PiGOE=/704x489/smart/filters:format(jpg):quality(99)/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/SELRZK72WFDCDB3KH7OTEBBGGU.jpg");
+}

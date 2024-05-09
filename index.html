@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- nombre de logo------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Cedarville+Cursive&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Lily+Script+One&family=Outfit:wght@100..900&family=Rakkas&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- nombre de logo------------------------------- -->
+    <!-- -------------------body---------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=Cedarville+Cursive&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Lily+Script+One&family=Outfit:wght@100..900&family=Rakkas&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ---------------body--------------------------- -->
+
+    <!-- icono de la web------------------------- -->
+    <link rel="icon" type="image/png" href="images/recipe.png" />
+    <!-- icono de la web------------------------- -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas</title>
+    <link rel="stylesheet" href="css/escritorio.css" />
+  </head>
+  <body>
+    <header>
+      <a class="contenedor-logo" href="index.html">
+        <p id="logo">RECETAS</p>
+        <i class="fa-solid fa-martini-glass-citrus"></i>
+      </a>
+      <nav id="nav">
+        <article class="contenedor-comidas">
+          <p class="explora">EXPLORA</p>
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-chevron-left"></i>
+        </article>
+
+        <ul class="categorias">
+          <i class="fa-solid fa-xmark"></i>
+          <li class="listas-comidas">
+            <a class="enlace-comidas" href="#"
+              ><img
+                class="img-comidas"
+                src="images/meat.png"
+                alt="carnes"
+              />Carnes
+            </a>
+            <small class="small-pro">Proximamente...</small>
+          </li>
+          <li class="listas-comidas">
+            <a class="enlace-comidas" href="#"
+              ><img
+                class="img-comidas"
+                src="images/spaghetti.png"
+                alt="pastas"
+              />Pastas
+            </a>
+            <small class="small-pro">Proximamente...</small>
+          </li>
+          <li class="listas-comidas">
+            <a class="enlace-comidas" href="#">
+              <img
+                class="img-comidas"
+                src="images/ensalada-rusa.png"
+                alt="ensaladas"
+              />Ensaladas
+            </a>
+            <small class="small-pro">Proximamente...</small>
+          </li>
+          <li class="listas-comidas">
+            <a class="enlace-comidas" href="#"
+              ><img
+                class="img-comidas"
+                src="images/salsa.png"
+                alt="salsas"
+              />Salsas
+            </a>
+            <small class="small-pro">Proximamente...</small>
+          </li>
+          <li class="listas-comidas">
+            <a class="enlace-comidas" href="postres.html"
+              ><img
+                class="img-comidas"
+                src="images/ice-cream.png"
+                alt="postres"
+              />Postres</a
+            >
+          </li>
+          <li class="listas-comidas">
+            <a class="enlace-comidas" href="#">
+              <img
+                class="img-comidas"
+                src="images/sopa-de-monodongo.png"
+                alt="sopas"
+              />Sopas
+            </a>
+            <small class="small-pro">Proximamente...</small>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <section id="carrusel">
+        <p>Explora recetas de todo tipo</p>
+        <section id="cont-figure-1" class="cont-figure">
+          <article class="imagen imagen-1">         
+            <img src="images/pizza.jpg" alt="" id="img1" />
+          </article>
+          <article class="flechas flechas-1">
+            <a href="#cont-figure-5"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#cont-figure-2"><i class="fa-solid fa-angle-right"></i></a>
+          </article>
+        </section>
+        <section id="cont-figure-2" class="cont-figure">
+          <article class="imagen imagen-2">
+            <img src="images/salsa.jpg" alt="" id="img2" />
+          </article>
+          <article class="flechas flechas-2">
+            <a href="#cont-figure-1"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#cont-figure-3"><i class="fa-solid fa-angle-right"></i></a>
+          </article>
+        </section>
+        <section id="cont-figure-3" class="cont-figure">
+          <article class="imagen imagen-3">
+            <img src="images/torta.jpg" alt="" id="img3" />
+          </article>
+          <article class="flechas flechas-3">
+            <a href="#cont-figure-2"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#cont-figure-4"><i class="fa-solid fa-angle-right"></i></a>
+          </article>
+        </section>
+        <section id="cont-figure-4" class="cont-figure">
+          <article class="imagen imagen-4">
+            <img src="images/postre.jpg" alt="" id="img4" />
+          </article>
+          <article class="flechas flechas-4">
+            <a href="#cont-figure-3"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#cont-figure-5"><i class="fa-solid fa-angle-right"></i></a>
+          </article>
+        </section>
+        <section id="cont-figure-5" class="cont-figure">
+          <article class="imagen imagen-5">
+            <img src="images/carne.jpg" alt="" id="img5" />
+          </article>
+          <article class="flechas flechas-5">
+            <a href="#cont-figure-4"><i class="fa-solid fa-angle-left"></i></a>
+            <a href="#cont-figure-1"><i class="fa-solid fa-angle-right"></i></a>
+          </article>
+        </section>
+      </section> -->
+
+      <section id="carrusel-1">
+        <article class="contenedor-bienvenida">
+          <h1 class="h1-bi">
+            Bienvenido/a a <strong class="strong-bi">¡Recetas!</strong>
+          </h1>
+          <small class="small-bi">
+            <em class="em-bi">Recetas</em> - es un espacio donde descubrirás una
+            colección diversa de recetas para todos los gustos y ocasiones.
+          </small>
+        </article>
+
+        <article class="contenedor-platos">
+          <span class="imagen-cont-platos">
+            <a href="#">
+              <img
+                class="imagen-platos"
+                src="https://w7.pngwing.com/pngs/637/529/png-transparent-sliced-tomatoes-and-cooked-meat-on-white-plate-breakfast-food-buffet-dish-dinner-breakfast-food-breakfast-recipe-thumbnail.png"
+                alt="plato de carne"
+              />
+              <small class="small-platos">Carnes</small>
+            </a>
+          </span>
+          <span class="imagen-cont-platos">
+            <a href="#">
+              <img
+                class="imagen-platos"
+                src="https://w7.pngwing.com/pngs/229/18/png-transparent-tomato-soup-vegetarian-cuisine-food-dish-tomato-soup-soup-food-recipe-thumbnail.png"
+                alt="plato de sopa"
+              />
+              <small class="small-platos">Sopas</small>
+            </a>
+          </span>
+          <span class="imagen-cont-platos">
+            <a href="#">
+              <img
+                class="imagen-platos"
+                src="https://w7.pngwing.com/pngs/286/258/png-transparent-vegetable-salad-dish-israeli-salad-european-cuisine-vegetable-food-vegetable-salad-leaf-vegetable-recipe-fruit-salad-thumbnail.png"
+                alt="plato de ensalada"
+              />
+              <small class="small-platos">Ensaladas</small>
+            </a>
+          </span>
+
+          <span class="imagen-cont-platos">
+            <a href="postres.html">
+              <img
+                class="imagen-platos"
+                src="https://w7.pngwing.com/pngs/255/984/png-transparent-malaysia-breakfast-pancake-dish-dessert-pancakes-food-recipe-couch-thumbnail.png"
+                alt="plato de postre"
+              />
+              <small class="small-platos">Postres</small>
+            </a>
+          </span>
+          <span class="imagen-cont-platos">
+            <a href="#">
+              <img
+                class="imagen-platos"
+                src="https://w7.pngwing.com/pngs/203/250/png-transparent-chili-soup-dish-marinara-sauce-barbecue-sauce-pizza-gravy-sauce-recipe-cheese-sauces-thumbnail.png"
+                alt="plato de salsa"
+              />
+              <small class="small-platos">Salsas</small>
+            </a>
+          </span>
+        </article>
+      </section>
+
+      <!-- desayuno--------------------------------------------------- -->
+      <section id="desayuno">
+        <h2 class="h2-desayuno">
+          ¿Que te gustaria desayunar?
+          <img
+            src="https://cdn.pixabay.com/photo/2013/07/12/13/52/leaf-147490_1280.png"
+            alt=""
+          />
+        </h2>
+        <article class="cont-t">
+          <section class="t t-de-1">
+            <small class="small-desayuno"
+              ><i class="fa-regular fa-clock"></i> - 18 minutos</small
+            >
+            <h3 class="h3-desayuno"><a href="http://">Pan Francés</a></h3>
+          </section>
+
+          <section class="t t-de-2">
+            <small class="small-desayuno"
+              ><i class="fa-regular fa-clock"></i> - 15 minutos</small
+            >
+            <h3 class="h3-desayuno">
+              <a href="http://">Omelette de Espinaca con Queso Panela</a>
+            </h3>
+          </section>
+
+          <section class="t t-de-3">
+            <small class="small-desayuno"
+              ><i class="fa-regular fa-clock"></i> - 14 minutos</small
+            >
+            <h3 class="h3-desayuno">
+              <a href="http://">Atole de Chocolate con Nuez</a>
+            </h3>
+          </section>
+        </article>
+      </section>
+      <!-- deaayuno--------------------------------------------------- -->
+
+      <!-- almuerzo--------------------------------------------------- -->
+      <section id="almuerzo">
+        <h2 class="h2-almuerzo">
+          Opciones para tu mediodia
+          <i class="fa-solid fa-rocket"></i>
+        </h2>
+        <article class="cont-t">
+          <section class="t t-al-1">
+            <small class="small-almuerzo"
+              ><i class="fa-regular fa-clock"></i> - 30 minutos</small
+            >
+            <h3 class="h3-almuerzo">
+              <a href="http://">Receta de Fetuccini a la huancaína</a>
+            </h3>
+          </section>
+          <section class="t t-al-2">
+            <small class="small-almuerzo"
+              ><i class="fa-regular fa-clock"></i> - 30 minutos</small
+            >
+            <h3 class="h3-almuerzo">
+              <a href="http://">Receta de Bistec apanado</a>
+            </h3>
+          </section>
+          <section class="cont-dos">
+            <section class="t t-al-3">
+              <small class="small-almuerzo"
+                ><i class="fa-regular fa-clock"></i> - 1 hora 30 minutos</small
+              >
+
+              <h3 class="h3-almuerzo">
+                <a href="http://"
+                  >Receta de Empanadas de jamón, queso y cebolla</a
+                >
+              </h3>
+            </section>
+            <section class="t t-al-4">
+              <small class="small-almuerzo"
+                ><i class="fa-regular fa-clock"></i> - 45 minutos</small
+              >
+              <h3 class="h3-almuerzo">
+                <a href="http://">Receta de Canelones de verdura y pollo</a>
+              </h3>
+            </section>
+          </section>
+        </article>
+      </section>
+      <!-- almuerzo--------------------------------------------------- -->
+
+      <!-- cena--------------------------------------------------- -->
+      <section id="cena">
+        <h2 class="h2-cena">
+          Tres buenas ideas para cenar
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </h2>
+        <article class="cont-t">
+          <section class="cont-tres">
+            <section class="t t-cena-2">
+              <small class="small-cena"
+                ><i class="fa-regular fa-clock"></i> - 45 minutos</small
+              >
+              <h3 class="h3-cena"><a href="http://">Patatas al horno</a></h3>
+            </section>
+            <section class="t t-cena-3">
+              <small class="small-cena"
+                ><i class="fa-regular fa-clock"></i> - 2 horas 30 minutos</small
+              >
+              <h3 class="h3-cena">
+                <a href="http://">Receta de Pizza de pepperoni </a>
+              </h3>
+            </section>
+
+            <section class="t t-cena-4">
+              <small class="small-cena"
+                ><i class="fa-regular fa-clock"></i> - 15 minutos</small
+              >
+              <h3 class="h3-cena">
+                <a href="http://">Receta de Ensalada Waldorf </a>
+              </h3>
+            </section>
+          </section>
+          <section class="t t-cena-1">
+            <small class="small-cena"
+              ><i class="fa-regular fa-clock"></i> - 30 minutos</small
+            >
+            <h3 class="h3-cena">
+              <a href="http://">Receta de Malfatti de acelga </a>
+            </h3>
+          </section>
+        </article>
+      </section>
+      <!-- cena--------------------------------------------------- -->
+
+      <!-- <section id="" name="">
+        <h1>Top 10 mejores recetas rapidas</h1>
+      </section>
+      <section id="" name="">
+        <h2>Top 10 mejores recetas rapidas</h2>
+      </section>
+      <section id="" name="">
+        <h2>Top 10 mejores recetas rapidas</h2>
+      </section>
+      <section id="" name="">
+        <h2>ingredientes galeria</h2>
+      </section> -->
+    </main>
+    <footer id="footer">
+      <section class="sec-logo">
+        <a class="contenedor-logo" href="index.html">
+          <p id="logo">RECETAS</p>
+          <i class="fa-solid fa-martini-glass-citrus"></i>
+        </a>
+      </section>
+      <section class="info-res">
+        <p>&copy; 2024 Recetas Company. All rights reserved.</p>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <!-- iconos---------------------------- -->
+    <script
+      src="https://kit.fontawesome.com/75cc22610a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- iconos---------------------------- -->
+  </body>
+</html>

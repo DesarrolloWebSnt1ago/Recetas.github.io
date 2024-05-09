@@ -1,0 +1,160 @@
+/* pantallas de mobiles------------------------------------------ */
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  /* mayoria de partes--------------------------- */
+  p {
+    font-size: 1rem !important;
+  }
+  small {
+    font-size: 1rem !important;
+  }
+  strong {
+    font-size: 1rem !important;
+  }
+  em {
+    font-size: 1rem !important;
+  }
+
+  h1 {
+    font-size: 1.7rem !important;
+  }
+  h2 {
+    font-size: 1.6rem !important;
+  }
+
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  /* mayoria de partes--------------------------- */
+
+  /* partes especificas--------------------- */
+  p#logo {
+    font-size: 1.5rem !important;
+  }
+  p.explora {
+    display: none;
+  }
+  a.contenedor-logo i.fa-martini-glass-citrus {
+    font-size: 1.5rem;
+  }
+
+  article.contenedor-comidas i.fa-bars {
+    display: block;
+    font-size: 1.5rem;
+  }
+  article.contenedor-comidas i.fa-chevron-left {
+    display: none;
+  }
+  nav#nav:hover ul.categorias {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    row-gap: 70px;
+    border-radius: 0px;
+    place-content: center;
+  }
+  ul.categorias i.fa-xmark {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    font-size: 50px;
+  }
+
+  ul.categorias li.listas-comidas {
+    padding: 10px;
+  }
+  strong.strong-bi {
+    font-size: 1.3rem !important;
+  }
+  section#carrusel-1 {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section#carrusel-1 article.contenedor-bienvenida {
+    flex-direction: column;
+    position: relative;
+  }
+  section#carrusel-1 article.contenedor-bienvenida h1.h1-bi {
+    border-bottom: 1px solid #545557;
+    border-right: none;
+    padding-right: 0px;
+  }
+
+  section#carrusel-1 article.contenedor-bienvenida small.small-bi {
+    padding-left: 0px;
+    margin: 10px;
+  }
+
+  section#carrusel-1 article.contenedor-platos {
+    bottom: 0;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  article.contenedor-platos a {
+    margin: 0;
+    padding: 5px;
+  }
+  article.contenedor-platos span.imagen-cont-platos {
+    padding: 10px;
+  }
+
+  span.imagen-cont-platos img.imagen-platos {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+  }
+  span.imagen-cont-platos small.small-platos {
+    font-size: large;
+    margin: 5px;
+  }
+  main section#desayuno {
+    margin-top: 50px;
+  }
+  #desayuno h2 img {
+    width: 20px;
+  }
+  article.cont-t {
+    padding: 0;
+  }
+  article.cont-t section.t {
+    width: 300px;
+    height: 300px;
+  }
+  figure.imagen-postres figcaption {
+    font-size: large;
+  }
+  /* footer----------------------------------- */
+  footer#footer {
+    flex-direction: column;
+  }
+  footer#footer section.sec-logo {
+    border-right: 0px;
+    padding-right: 0;
+  }
+  footer#footer section.info-res {
+    padding-left: 0;
+  }
+  /* footer----------------------------------- */
+  /* partes especificas--------------------- */
+}
+/* pantallas de mobiles------------------------------------------ */
+
+/* pantallas de tablets------------------------------------------ */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-title {
+    font-size: 90%;
+  }
+}
+/* pantallas de tablets------------------------------------------ */
+
+/* pantallas de PCs------------------------------------------ */
+@media only screen and (min-width: 1024px) {
+  .site-title {
+    font-size: 120%;
+  }
+}
+/* pantallas de PCs------------------------------------------ */
